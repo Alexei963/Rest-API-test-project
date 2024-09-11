@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: springBoot-backend
+  datasource:
+    url: jdbc:postgresql://localhost:5432/testDB
+    username: alexei963
+    password: 1989Pav+
+    driver-class-name: org.postgresql.Driver
+  flyway:
+    schemas:
+      - public
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: true
