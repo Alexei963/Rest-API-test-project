@@ -1,5 +1,6 @@
 package com.example.backend.entity;
 
+import com.fasterxml.jackson.annotation.JsonSetter;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -16,6 +17,7 @@ public class User {
     private String name;
     @Column(nullable = false, unique = true)
     private String email;
+    @JsonSetter("phone")
     @Column(name = "phone_number", nullable = false)
     private String phoneNumber;
     private String city;
